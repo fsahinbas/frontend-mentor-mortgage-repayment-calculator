@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  /* colors */
+  --clr-lime: #d8db2f;
+  --clr-red: #d73328;
+  --clr-white: #ffffff;
+  --clr-slate-900: #133041;
+  --clr-slate-700: #4e6e7e;
+  --clr-slate-500: #6b94a8;
+  --clr-slate-300: #9abed5;
+  --clr-slate-100: #e4f4fd;
+
+  /* typography */
+  --fs-xl: 3.5rem;
+  --fs-lg: 1.5rem;
+  --fs-md: 1.25rem;
+  --fs-sm: 1rem;
+  --fs-xs: 0.875rem;
+
+  --fw-xl: 700;
+  --fw-lg: 600;
+  --fw-md: 500;
+  --fw-sm: 400;
+  --fw-xs: 300;
+
+  --lh-xl: 150%;
+  --lh-lg: 125%;
+
+  --ls-md: 0px;
+  --ls-sm: -1px;
+}
+
+/* UTILITIES */
+
+.text-preset-1 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-xl);
+  line-height: var(--lh-lg);
+  letter-spacing: var(--ls-sm);
+}
+
+.text-preset-2 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-xl);
+  line-height: var(--lh-md);
+  letter-spacing: var(--ls-sm);
+}
+
+.text-preset-3 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-xl);
+  line-height: var(--lh-md);
+  letter-spacing: var(--ls-sm);
+}
+
+.text-preset-4 {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-md);
+  line-height: var(--lh-lg);
+  letter-spacing: var(--ls-md);
+}
+
+.text-preset-5 {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-md);
+  line-height: var(--lh-lg);
+  letter-spacing: var(--ls-md);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0;
+  }
+}
