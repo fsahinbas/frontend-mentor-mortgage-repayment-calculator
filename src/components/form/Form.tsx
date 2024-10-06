@@ -44,7 +44,7 @@ const Form = ({
     }
     if (type === "interest") {
       monthlyPayment = amount * r;
-      totalPayment = monthlyPayment;
+      totalPayment = monthlyPayment * n;
     }
     handleCalc({
       monthlyPayment,
